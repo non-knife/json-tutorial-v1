@@ -16,6 +16,7 @@ enum {
 };
 
 // const不能更改传入的字符串
+//解析JSON
 int lept_parse(lept_value* v, const char* json);
 
 lept_type lept_get_type(const lept_value* v);

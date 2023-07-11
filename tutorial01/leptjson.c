@@ -34,6 +34,7 @@ static int lept_parse_value(lept_context* c, lept_value* v) {
 
 int lept_parse(lept_value* v, const char* json) {
     lept_context c;
+    //assert断言函数，表达式为真，继续执行，为假，中断
     assert(v != NULL);
     c.json = json;
     v->type = LEPT_NULL;
